@@ -1,0 +1,19 @@
+# Sanal ortam ve önbellek
+.venv/
+__pycache__/
+*.pyc
+
+# Veri seti (step1_data.py ile yeniden indirilir)
+datasets/
+
+# Ultralytics çıktıları: yalnızca en iyi ağırlık ve grafikler tutulur
+runs/**/weights/last.pt
+runs/**/weights/epoch*.pt
+*.cache
+
+# Önceden eğitilmiş indirilen ağırlıklar
+yolov8s.pt
+yolo11n.pt
+
+# Eğitim yedekleri (optimizer içerir, >100 MB)
+runs/**/weights/*backup*.pt
